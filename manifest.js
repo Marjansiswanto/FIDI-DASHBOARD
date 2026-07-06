@@ -24,10 +24,10 @@ const PDF_CATALOG = [
     ]
   },
   {
-    category: "Contoh Kategori Lain",
+    category: "Marketing(Blended Learning)",
     files: [
       // Tambahkan file di sini, contoh:
-      // { title: "Judul Presentasi Anda", path: "pdfs/Contoh-Kategori/nama-file.pdf" }
+       { titlle: "Assignment Peserta Presentasi", path: "pdfs/Marketing-Blended-Learning/Assignment-Peserta.pdf" }
     ]
   }
 ];

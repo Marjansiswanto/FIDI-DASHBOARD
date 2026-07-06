@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIDI Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LAYAR 1: GERBANG PASSWORD -->
+  <div id="gate" class="screen">
+    <div class="card">
+      <h1>Selamat Datang</h1>
+      <h2>FIDI Portal</h2>
+      <p class="subtitle">Masukkan password untuk melanjutkan</p>
+
+      <form id="loginForm">
+        <input type="password" id="passwordInput" placeholder="Password" autocomplete="off" required>
+        <button type="submit">Masuk</button>
+      </form>
+
+      <p id="errorMsg" class="error"></p>
+    </div>
+  </div>
+
+  <!-- LAYAR 2: DASHBOARD KATALOG PDF -->
+  <div id="dashboard" class="screen hidden dashboard-screen">
+    <header class="topbar">
+      <span>FIDI Portal — Dashboard Presentasi</span>
+      <button id="logoutBtnDash">Keluar</button>
+    </header>
+    <div class="dashboard-body">
+      <div class="dashboard-intro">
+        <input type="text" id="searchBox" placeholder="Cari judul presentasi...">
+      </div>
+      <div id="catalogContainer"></div>
+    </div>
+  </div>
+
+  <!-- LAYAR 3: VIEWER PDF -->
+  <div id="viewer" class="screen hidden viewer-screen">
+    <header class="topbar">
+      <button id="backToDashboard">&larr; Kembali</button>
+      <span id="viewerTitle">Judul Presentasi</span>
+      <button id="downloadBtn">Unduh</button>
+    </header>
+
+    <div class="viewer-controls">
+      <button id="prevPage">&#8592; Sebelumnya</button>
+      <span id="pageIndicator">Halaman 1 / 1</span>
+      <button id="nextPage">Selanjutnya &#8594;</button>
+    </div>
+
+    <div id="pdfCanvasWrap" class="pdf-canvas-wrap">
+      <canvas id="pdfCanvas"></canvas>
+    </div>
+  </div>
+
+  <!-- MODAL PASSWORD DOWNLOAD -->
+  <div id="downloadModal" class="modal-overlay hidden">
+    <div class="modal-card">
+      <h3>Password Download</h3>
+      <p>Masukkan password khusus untuk mengunduh file asli.</p>
+      <input type="password" id="downloadPasswordInput" placeholder="Password download" autocomplete="off">
+      <div class="modal-actions">
+        <button id="cancelDownload">Batal</button>
+        <button id="confirmDownload">Unduh</button>
+      </div>
+      <p id="downloadErrorMsg" class="error"></p>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="manifest.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

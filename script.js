@@ -15,10 +15,10 @@
 //    DOWNLOAD_PASSWORD_HASH (unduh file) di bawah ini
 // ======================================================
 
-const PASSWORD_HASH = "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d";
+const PASSWORD_HASH = "c9daf4dd7326fbca56c8987ca62792df03b2e93951ab9bab6081cf8571258104";
 // Hash di atas = "password" — GANTI SEBELUM DI-DEPLOY!
 
-const DOWNLOAD_PASSWORD_HASH = "0d6f64dcab19cf5f184284105a0e6544244222c413df4855adaf1d7def1f0c08";
+const DOWNLOAD_PASSWORD_HASH = "1125d33908d932af86e2aae1bfa788147a8049f29896eb629d554b401fb37285";
 // Hash di atas = "ubahpasswordini" — GANTI SEBELUM DI-DEPLOY! Harus BEDA dari password portal.
 
 const SESSION_KEY = "fidi_portal_unlocked";

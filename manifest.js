@@ -27,7 +27,7 @@ const PDF_CATALOG = [
     category: "Marketing(Blended Learning)",
     files: [
       // Tambahkan file di sini, contoh:
-       { titlle: "Assignment Peserta Presentasi", path: "pdfs/Marketing-Blended-Learning/Assignment-Peserta.pdf" }
+       { title: "Assignment Peserta Presentasi", path: "pdfs/Marketing-Blended-Learning/Assignment-Peserta.pdf" }
     ]
   }
 ];
